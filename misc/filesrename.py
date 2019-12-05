@@ -8,7 +8,7 @@ from nt import chdir
 
 # 去掉文件中每一行 内容开头的 几个数字。
 def cutListName():
-    fo = open("E:\\python\\temp", 'r')
+    fo = open(r"E:\python\temp", 'r')
     fc = fo.readlines()
 
     line = 1
@@ -26,11 +26,14 @@ def cutListName():
 
 
 # 重命名响应文件夹下的文件名
-def rename():
-    path = "G:\\BaiduYunDownload\\X文件夹\\"
-    olds = ".blv"
-    news = ".mp4"
+BACKSLASH = '\\'
+# 根据需要修改
+path = r"E:\BaiduYunDownload\PATH" + BACKSLASH
+olds = "_"
+news = ""
 
+
+def rename():
     filelist = os.listdir(path)  # 该文件夹下的所有文件
 
     for file in filelist:  # 遍历所有文件 包括文件夹
