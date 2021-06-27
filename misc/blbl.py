@@ -9,17 +9,17 @@ NOTE:
 '''
 
 # 指定工作路径(Windows环境路径)
-PATH = r"E:\BaiduYunDownload\12345"
+PATH = r"E:\BaiduYunDownload\80342641"
 
 BACKSLASH = '\\'
-WORKFOLDER = PATH + BACKSLASH
+WORK_FOLDER = PATH + BACKSLASH
 
 
 def decodeJsonFile(subp):
     files = os.listdir(subp)
     for file in files:
         if file.rfind("entry.json") >= 0:
-            curr = WORKFOLDER + subp + BACKSLASH
+            curr = WORK_FOLDER + subp + BACKSLASH
             with open(curr + file, encoding='utf-8') as jsonfile:
                 entry = json.load(jsonfile)
                 folder_name = entry['type_tag'] + BACKSLASH
@@ -27,7 +27,7 @@ def decodeJsonFile(subp):
                 print("资源文件夹：" + folder_name)
                 print("视频文件名：" + res_name)
                 i = curr + folder_name
-                o = WORKFOLDER + res_name
+                o = WORK_FOLDER + res_name
                 print("资源路径：" + i + " ,输出文件名路径：" + o)
                 if folder_name.startswith('lua.flv'):
                     rename(i, o)
@@ -59,4 +59,4 @@ def merge(inpath, outpath):
 
 
 if __name__ == '__main__':
-    rebuild(WORKFOLDER)
+    rebuild(WORK_FOLDER)
