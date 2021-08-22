@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff43fc77-d774-4dcc-add8-3bdc9596f628" name="Default Changelist" comment="b video merge">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc/delSpecFolder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PyTools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyTools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="ff43fc77-d774-4dcc-add8-3bdc9596f628" name="Default Changelist" comment="cmd命令脚本：多APK文件安装-支持传入路径">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/misc/blbl.py" beforeDir="false" afterPath="$PROJECT_DIR$/misc/blbl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/delSpecFolder.py" beforeDir="false" afterPath="$PROJECT_DIR$/misc/delSpecFolder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +74,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files/Python27" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -89,7 +85,16 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.delSpecFolder">
+  <component name="RunManager" selected="Batch.install-multi">
+    <configuration name="install-multi" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="PyTools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Work\code\Python\PyTools\bat" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="install-multi.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="blbl" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,27 +158,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="trans" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PyTools" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/misc" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/misc/trans.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="transcoding" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Batch.install-multi" />
         <item itemvalue="Python.delSpecFolder" />
         <item itemvalue="Python.socket_clent" />
         <item itemvalue="Python.blbl" />
         <item itemvalue="Python.transcoding" />
-        <item itemvalue="Python.trans" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +229,49 @@
       <option name="project" value="LOCAL" />
       <updated>1578650303943</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="project config update">
+      <created>1624674151103</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624674151103</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新增：删除指定文件夹（value-*）">
+      <created>1624773189620</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624773189620</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cmd命令脚本：无限循环">
+      <created>1629019089063</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629019089063</updated>
+    </task>
+    <task id="LOCAL-00008" summary="cmd命令脚本：遍历当前文件夹的文件，找出apk格式的文件">
+      <created>1629536446092</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629536446092</updated>
+    </task>
+    <task id="LOCAL-00009" summary="cmd命令脚本：遍历当前文件夹的文件，找出apk格式的文件，并安装">
+      <created>1629536723449</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629536723449</updated>
+    </task>
+    <task id="LOCAL-00010" summary="cmd命令脚本：多APK文件安装-支持传入路径">
+      <created>1629604144137</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1629604144137</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -311,18 +337,13 @@
     <MESSAGE value="unzip" />
     <MESSAGE value="b video merge" />
     <MESSAGE value="视频转码" />
-    <option name="LAST_COMMIT_MESSAGE" value="视频转码" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/misc/delSpecFolder.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="project config update" />
+    <MESSAGE value="新增：删除指定文件夹（value-*）" />
+    <MESSAGE value="cmd命令脚本：无限循环" />
+    <MESSAGE value="cmd命令脚本：遍历当前文件夹的文件，找出apk格式的文件" />
+    <MESSAGE value="cmd命令脚本：遍历当前文件夹的文件，找出apk格式的文件，并安装" />
+    <MESSAGE value="cmd命令脚本：多APK文件安装-支持传入路径" />
+    <option name="LAST_COMMIT_MESSAGE" value="cmd命令脚本：多APK文件安装-支持传入路径" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.pydevproject">
