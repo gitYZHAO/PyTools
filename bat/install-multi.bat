@@ -5,12 +5,19 @@ REM 参数1：输入需要安装的APK文件夹路径。
 REM       如果没有输入参数，则默认安装bat当前路径下的所有apk文件。
 cls
 SETLOCAL ENABLEDELAYEDEXPANSION
+
+SET APK_PATH=
 SET BLANK= 
 
 IF NOT [%1] == [] (
   CD %1
 )
-echo Current path is %cd%
+
+:START
+ECHO Current path is %cd%
+IF NOT "%APK_PATH%"=="" (
+  CD %APK_PATH%
+)
 
 FOR /F %%i IN ('DIR /t/b %cd%') DO (
   REM ECHO %%i
@@ -21,12 +28,14 @@ FOR /F %%i IN ('DIR /t/b %cd%') DO (
   )
 )
 
-ECHO PATHNAME='%M_APK_PATH%'
-IF '%M_APK_PATH%'=='' (
-  ECHO Error: Can not fine the apks!
-  GOTO END
+ECHO Check path ...
+IF "%M_APK_PATH%"=="" (
+  ECHO ERROR : Current path can NOT find apks!
+  SET /p APK_PATH=Please input APK path:
+  GOTO START
 )
-
+ECHO PATHNAME: %M_APK_PATH%
+ECHO Start installing ...
 adb install-multiple %M_APK_PATH%
 
 :END
