@@ -22,7 +22,13 @@ IF NOT "%APK_PATH%"=="" (
 FOR /F %%i IN ('DIR /t/b %cd%') DO (
   REM ECHO %%i
   SET str=%%i
-  IF NOT "!str:.apk=!"=="!str!" ( 
+  IF NOT "!str:.apk=!"=="!str!" (
+    IF "!str:base.=!"=="!str!" (
+      IF "!str:split_config.=!"=="!str!" (
+        ECHO FATEL ERROR:Bad apk name "!str!"
+        GOTO END
+      )
+    )
     ECHO Find "!str!" 
     SET M_APK_PATH=!M_APK_PATH!!str!!BLANK!
   )
