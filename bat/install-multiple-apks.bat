@@ -10,13 +10,13 @@ SET APK_PATH=
 SET BLANK= 
 
 IF NOT [%1] == [] (
-  CD %1
+  CD /d %1
 )
 
 :START
 ECHO Current path is %cd%
 IF NOT "%APK_PATH%"=="" (
-  CD %APK_PATH%
+  CD /d %APK_PATH%
 )
 
 FOR /F %%i IN ('DIR /t/b %cd%') DO (
